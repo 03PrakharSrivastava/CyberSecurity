@@ -1,0 +1,50 @@
+.team-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; 
+    margin: 80px auto 0; 
+    padding: 0 20px; 
+  }
+  
+  .team-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; 
+    box-sizing: border-box; 
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .submit-button:hover,
+  .submit-button:active {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .team-component {
+        width: 90%;
+        padding: 0 10px;
+        margin-top: 60px; /* Adjusted margin for smaller screens */
+    }
+
+    .team-input {
+        font-size: 14px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+    }
+}

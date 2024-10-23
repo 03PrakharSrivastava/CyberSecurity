@@ -93,7 +93,7 @@ const SignUp = ()=>{
             </div>
             <div >
               <label >UserType</label>
-              <input type="text" name="userType" value={formData.userType} onChange={handleChange} placeholder="admin or student" required />
+              <input type="text" name="userType" value={formData.userType} onChange={handleChange} placeholder="user" required />
             </div>
             <button className="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
             <hr className="my-4"/>

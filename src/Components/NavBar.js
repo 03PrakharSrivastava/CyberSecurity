@@ -36,17 +36,10 @@ const NavBar = (props) => {
             </ul>
                         </>
                     )}
-                    {props.type === 'admin' && (
+                    {props.type === 'user' && (
                         <>
                         <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="/admin" className="nav-link px-2 text-secondary">Home</a></li>
-            </ul>
-                        </>
-                    )}
-                    {props.type === 'student' && (
-                        <>
-                        <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="/student" className="nav-link px-2 text-secondary">Home</a></li>
+              <li><a href="/user" className="nav-link px-2 text-secondary">Home</a></li>
             </ul>
                         </>
                     )}
@@ -61,19 +54,8 @@ const NavBar = (props) => {
            {authTokenExists && 
 
             <div className="text-end">
-            {props.type==="student" && (
+            {props.type==="user" && (
             <> 
-            <Link to={"/viewTeam"}><button type="button" className="btn ">View Team</button></Link>
-            <Link to={"/joinTeam"}><button type="button" className="btn ">Join Team</button></Link>
-            <Link to={"/profile"}><button type="button" className="btn ">Profile</button></Link>
-            <a href="/"><button type="button" className="btn btn-warning" onClick={handleLogOut}>LogOut</button></a>
-              </>
-            )}
-
-            {props.type==="admin" && (
-              <>
-              <Link to={"/manageTeam"}><button type="button" className="btn ">Manage Team</button></Link>
-              <Link to={"/createTeam"}><button type="button" className="btn ">Create Team</button></Link>
             <Link to={"/profile"}><button type="button" className="btn ">Profile</button></Link>
             <a href="/"><button type="button" className="btn btn-warning" onClick={handleLogOut}>LogOut</button></a>
               </>

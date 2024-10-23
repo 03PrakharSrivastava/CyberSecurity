@@ -68,6 +68,7 @@ const Profile = () => {
           `http://localhost:4000/api/profile/${username}`
         );
         setProfileData(response.data);
+        console.log(response.data);
       } catch (error) {
         console.error("Error fetching profile data:", error);
       }
@@ -77,7 +78,9 @@ const Profile = () => {
       try {
         const userType = await auth();
         setType(userType);
+        console.log(userType);
         fetchProfileData();
+        // setType(profileData.userType);
       } catch (error) {
         console.error('Error:', error.message);
         setType(null);
@@ -93,7 +96,7 @@ const Profile = () => {
 
   return (
     <>
-      {type === "student" || type === "admin" ? (
+      {type === "user" ? (
         <div>
           <NavBar type={type} username={username} />
           <div className="profile-container">

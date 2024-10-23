@@ -36,12 +36,8 @@ function Login() {
         Cookies.set('authToken', authToken, options);
         localStorage.setItem("username", formData.username);
         
-        if(userType==="student"){
-          // window.location.href = ('/');
-          navigate('/student');
-        }
-        else if(userType==="admin"){
-          navigate('/admin');
+        if(userType==="user"){
+          navigate('/user');
         }
       }
     } catch (error) {

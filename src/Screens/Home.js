@@ -7,94 +7,21 @@ const Home = (props) => {
       <NavBar type = {props.type}/>
 
       <div className="px-4 py-5 my-5 text-center">
-        <img
-          className="d-block mx-auto mb-4"
-          src="/docs/5.3/assets/brand/bootstrap-logo.svg"
-          alt=""
-          width="72"
-          height="57"
-        />
-        <h1 className="display-5 fw-bold text-body-emphasis">Upload Files</h1>
+        <h1 className="display-5 fw-bold text-body-emphasis">Chat Bot</h1>
         <div className="col-lg-6 mx-auto">
           <p className="lead mb-4">
-            At FileVault, we provide a seamless and secure platform for uploading, storing, and managing your important files. Whether you're organizing personal documents, collaborating on projects, or sharing files with your team, our intuitive interface ensures that your data is always accessible, protected, and easy to manage.
+          Welcome to Our Chatbot, your smart virtual assistant! Our chatbot is designed to make your life easier by providing
+           instant, 24/7 support and answers to your questions. Whether you need help navigating our services, resolving issues, or 
+           simply seeking information, our chatbot is here to assist you in real-time. With advanced AI and natural language processing, 
+           it delivers personalized, accurate, and engaging conversations, ensuring a seamless experience. Try it out and discover how 
+           Our Chatbot can transform the way you interact with technology!
           </p>
           <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button
-              type="button"
-              className="btn btn-warning btn-lg px-4 gap-3"
-            >
-              Primary button
-            </button>
-            <button
-              type="button"
-              className="btn btn-outline-secondary btn-lg px-4"
-            >
-              Secondary
-            </button>
           </div>
         </div>
       </div>
 
-      <div className="container px-4 py-5" id="hanging-icons">
-        <h2 className="pb-2 border-bottom">Hanging icons</h2>
-        <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div className="col d-flex align-items-start">
-            <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-              <svg className="bi" width="1em" height="1em">
-                <use href="#toggles2"></use>
-              </svg>
-            </div>
-            <div>
-              <h3 className="fs-2 text-body-emphasis">Featured title</h3>
-              <p>
-                Paragraph of text beneath the heading to explain the heading.
-                We'll add onto it with another sentence and probably just keep
-                going until we run out of words.
-              </p>
-              <a href="#" className="btn btn-warning">
-                Primary button
-              </a>
-            </div>
-          </div>
-          <div className="col d-flex align-items-start">
-            <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-              <svg className="bi" width="1em" height="1em">
-                <use href="#cpu-fill"></use>
-              </svg>
-            </div>
-            <div>
-              <h3 className="fs-2 text-body-emphasis">Featured title</h3>
-              <p>
-                Paragraph of text beneath the heading to explain the heading.
-                We'll add onto it with another sentence and probably just keep
-                going until we run out of words.
-              </p>
-              <a href="#" className="btn btn-warning">
-                Primary button
-              </a>
-            </div>
-          </div>
-          <div className="col d-flex align-items-start">
-            <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-              <svg className="bi" width="1em" height="1em">
-                <use href="#tools"></use>
-              </svg>
-            </div>
-            <div>
-              <h3 className="fs-2 text-body-emphasis">Featured title</h3>
-              <p>
-                Paragraph of text beneath the heading to explain the heading.
-                We'll add onto it with another sentence and probably just keep
-                going until we run out of words.
-              </p>
-              <a href="#" className="btn btn-warning">
-                Primary button
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 <div>
     <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
   

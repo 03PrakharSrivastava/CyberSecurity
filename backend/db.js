@@ -1,15 +1,13 @@
-const mongoose = require('mongoose');
-const mongoURL = 'mongodb://0.0.0.0:27017/Cryptography';
+const mongoose = require("mongoose");
+const mongoURL = "mongodb://0.0.0.0:27017/Cryptography";
 
 const mongoDB = async () => {
   try {
     await mongoose.connect(mongoURL);
     console.log("connected");
-  } 
-  catch (err) {
+  } catch (err) {
     console.log("---", err);
   }
 };
-  
 
 module.exports = mongoDB;
